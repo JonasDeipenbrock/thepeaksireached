@@ -15,6 +15,7 @@ import { useQuery } from '@tanstack/react-query';
 import type { NextPage } from 'next';
 import { useState } from 'react';
 import { IoRefresh } from 'react-icons/io5';
+import MountainList from '../components/MountainList/MountainList';
 import { fetchPeaks } from '../repository/peaks';
 
 type Country = {
@@ -70,57 +71,61 @@ const ListPage: NextPage = () => {
 
     return (
         <>
-            {/* <ListSelection /> */}
-            <Flex align="center" gap={10} width="50%">
-                <FormControl>
-                    <FormLabel>Country</FormLabel>
-                    <Select
-                        value={country.name}
-                        onChange={(e) => onSelect(e.target.value)}
-                    >
-                        {countries.map((country) => {
-                            return (
-                                <option key={country.name} value={country.name}>
-                                    {country.name}
-                                </option>
-                            );
-                        })}
-                    </Select>
-                </FormControl>
-                <FormControl>
-                    <FormLabel>Minimum Height</FormLabel>
-                    <Slider
-                        colorScheme="whiteAlpha"
-                        min={20}
-                        max={50}
-                        onChange={(val) => setMinHeight(val)}
-                    >
-                        <SliderMark value={20}>2000</SliderMark>
-                        <SliderMark value={30}>3000</SliderMark>
-                        <SliderMark value={40}>4000</SliderMark>
-                        <SliderMark
-                            value={minHeight}
-                            textAlign="center"
-                            color="white"
-                            mt="-10"
-                            ml="-5"
-                            w="12"
+            <Box paddingBottom="10px">
+                <Flex align="center" gap={10} width="50%">
+                    <FormControl>
+                        <FormLabel>Country</FormLabel>
+                        <Select
+                            value={country.name}
+                            onChange={(e) => onSelect(e.target.value)}
                         >
-                            {minHeight * 100}
-                        </SliderMark>
-                        <SliderTrack>
-                            <SliderFilledTrack />
-                        </SliderTrack>
-                        <SliderThumb />
-                    </Slider>
-                </FormControl>
-                <Box>
-                    <Button leftIcon={<IoRefresh />} onClick={onRefresh}>
-                        Refresh
-                    </Button>
-                </Box>
-            </Flex>
-            {/* <MountainList /> */}
+                            {countries.map((country) => {
+                                return (
+                                    <option
+                                        key={country.name}
+                                        value={country.name}
+                                    >
+                                        {country.name}
+                                    </option>
+                                );
+                            })}
+                        </Select>
+                    </FormControl>
+                    <FormControl>
+                        <FormLabel>Minimum Height</FormLabel>
+                        <Slider
+                            colorScheme="whiteAlpha"
+                            min={20}
+                            max={50}
+                            onChange={(val) => setMinHeight(val)}
+                        >
+                            <SliderMark value={20}>2000</SliderMark>
+                            <SliderMark value={30}>3000</SliderMark>
+                            <SliderMark value={40}>4000</SliderMark>
+                            <SliderMark
+                                value={minHeight}
+                                textAlign="center"
+                                color="white"
+                                mt="-10"
+                                ml="-5"
+                                w="12"
+                            >
+                                {minHeight * 100}
+                            </SliderMark>
+                            <SliderTrack>
+                                <SliderFilledTrack />
+                            </SliderTrack>
+                            <SliderThumb />
+                        </Slider>
+                    </FormControl>
+                    <Box>
+                        <Button leftIcon={<IoRefresh />} onClick={onRefresh}>
+                            Refresh
+                        </Button>
+                    </Box>
+                </Flex>
+            </Box>
+            <MountainList mountains={data} loading={isLoading} />
         </>
     );
 };

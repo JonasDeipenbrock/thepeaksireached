@@ -1,0 +1,282 @@
+{
+    "type": "FeatureCollection",
+    "generator": "overpass-ide",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+    "timestamp": "2022-09-02T14:08:36Z",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "@id": "node/286930140",
+                "ele": "3420",
+                "name": "Gwächtenhorn",
+                "natural": "peak",
+                "wikidata": "Q669794"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.413367, 46.690836]
+            },
+            "id": "node/286930140"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "@id": "node/286930156",
+                "ele": "3503",
+                "name": "Sustenhorn",
+                "natural": "peak",
+                "summit:cross": "yes",
+                "wikidata": "Q16527",
+                "wikipedia": "de:Sustenhorn"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.4551989, 46.6989203]
+            },
+            "id": "node/286930156"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "@id": "node/1244930854",
+                "ele": "2900",
+                "name": "Giglistock",
+                "natural": "peak",
+                "wikidata": "Q3647271"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.386333, 46.7097]
+            },
+            "id": "node/1244930854"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "@id": "node/1244933412",
+                "ele": "3090",
+                "name": "Vorder Tierberg",
+                "natural": "peak"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.3974234, 46.6983876]
+            },
+            "id": "node/1244933412"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "@id": "node/1244934675",
+                "ele": "3418",
+                "name": "Mittler Tierberg",
+                "natural": "peak",
+                "wikidata": "Q22528834"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.3988398, 46.6916378]
+            },
+            "id": "node/1244934675"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "@id": "node/1908198600",
+                "ele": "3318",
+                "name": "Chli Sustenhorn",
+                "natural": "peak"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.4540764, 46.7108394]
+            },
+            "id": "node/1908198600"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "@id": "node/2426268599",
+                "ele": "2734",
+                "name": "Steilimi",
+                "natural": "peak"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.3891467, 46.7025097]
+            },
+            "id": "node/2426268599"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "@id": "node/3588390051",
+                "ele": "2822",
+                "name": "Drostistock",
+                "natural": "peak"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.3767509, 46.7083358]
+            },
+            "id": "node/3588390051"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "@id": "node/3588390052",
+                "ele": "2714",
+                "name": "Graui Stöckli",
+                "natural": "peak",
+                "wikidata": "Q22418629"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.3659334, 46.7130537]
+            },
+            "id": "node/3588390052"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "@id": "node/3588390053",
+                "ele": "2609",
+                "name": "Murmetestock",
+                "natural": "peak"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.3622172, 46.7082097]
+            },
+            "id": "node/3588390053"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "@id": "node/3588394116",
+                "ele": "2603",
+                "name": "Radlefshorn",
+                "natural": "peak",
+                "wikidata": "Q3647553"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.355116, 46.7144951]
+            },
+            "id": "node/3588394116"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "@id": "node/4376099892",
+                "ele": "3445",
+                "name": "Hinter Tierberg",
+                "natural": "peak",
+                "wikidata": "Q2603486",
+                "wikipedia": "en:Hinter Tierberg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.397339, 46.6840188]
+            },
+            "id": "node/4376099892"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "@id": "node/6312348000",
+                "natural": "peak"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.4538722, 46.6947409]
+            },
+            "id": "node/6312348000"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "@id": "node/6312348001",
+                "natural": "peak"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.4530568, 46.6914147]
+            },
+            "id": "node/6312348001"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "@id": "node/6312348002",
+                "name": "Vorder Sustenlimihorn",
+                "natural": "peak"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.4523688, 46.6888726]
+            },
+            "id": "node/6312348002"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "@id": "node/6312348003",
+                "ele": "3194",
+                "name": "Hinter Sustenlimihorn",
+                "natural": "peak",
+                "wikidata": "Q22627486"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.455739, 46.6853651]
+            },
+            "id": "node/6312348003"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "@id": "node/6312348004",
+                "ele": "3202",
+                "name": "Voralphorn",
+                "natural": "peak",
+                "wikidata": "Q9369148"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.463661, 46.6795874]
+            },
+            "id": "node/6312348004"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "@id": "node/6312348005",
+                "ele": "3211",
+                "name": "Brunnenstock",
+                "natural": "peak"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.4575154, 46.682369]
+            },
+            "id": "node/6312348005"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "@id": "node/6312348006",
+                "ele": "3201",
+                "name": "Chelenalphorn",
+                "natural": "peak",
+                "wikidata": "Q11689962"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.4650373, 46.6767131]
+            },
+            "id": "node/6312348006"
+        }
+    ]
+}
