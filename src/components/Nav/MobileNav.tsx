@@ -1,11 +1,6 @@
-import {
-    Avatar,
-    Flex,
-    IconButton,
-    Text,
-    useColorModeValue,
-} from '@chakra-ui/react';
+import { Flex, IconButton, Text, useColorModeValue } from '@chakra-ui/react';
 import { ImMenu } from 'react-icons/im';
+import AvatarGroup from '../User/AvatarGroup';
 
 type MobileNavProps = {
     onOpen: () => void;
@@ -41,10 +36,7 @@ const MobileNav = (props: MobileNavProps) => {
                     {process.env.NEXT_PUBLIC_APP_TITLE}
                 </Text>
 
-                <Avatar
-                    size={'sm'}
-                    src="https://randomuser.me/api/portraits/men/75.jpg"
-                />
+                <AvatarGroup />
             </Flex>
         </>
     );
