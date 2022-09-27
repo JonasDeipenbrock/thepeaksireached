@@ -1,44 +1,40 @@
-import { Flex, IconButton, Text, useColorModeValue } from '@chakra-ui/react';
-import { ImMenu } from 'react-icons/im';
-import AvatarGroup from '../User/AvatarGroup';
+import { Flex, Link, Stack, Text, useColorModeValue } from '@chakra-ui/react';
+import NextLink from 'next/link';
+import { LinkItems } from './Nav';
 
-type MobileNavProps = {
-    onOpen: () => void;
-};
-
-const MobileNav = (props: MobileNavProps) => {
+const MobileNav = () => {
     return (
-        <>
-            <Flex
-                ml={{ base: 0, md: 60 }}
-                px={{ base: 4, md: 4 }}
-                height="20"
-                alignItems="center"
-                bg={useColorModeValue('white', 'gray.900')}
-                borderBottomWidth="1px"
-                borderBottomColor={useColorModeValue('gray.200', 'gray.700')}
-                justifyContent={{ base: 'space-between', md: 'flex-end' }}
-            >
-                <IconButton
-                    display={{ base: 'flex', md: 'none' }}
-                    onClick={props.onOpen}
-                    variant="outline"
-                    aria-label="open menu"
-                    icon={<ImMenu />}
-                />
-
-                <Text
-                    display={{ base: 'flex', md: 'none' }}
-                    fontSize="2xl"
-                    fontFamily="monospace"
-                    fontWeight="bold"
+        <Stack
+            bg={useColorModeValue('white', 'gray.800')}
+            p={4}
+            display={{ md: 'none' }}
+        >
+            {LinkItems.map((navItem) => (
+                <Flex
+                    key={navItem.name}
+                    py={2}
+                    justify={'space-between'}
+                    align={'center'}
+                    _hover={{
+                        textDecoration: 'none',
+                    }}
                 >
-                    {process.env.NEXT_PUBLIC_APP_TITLE}
-                </Text>
-
-                <AvatarGroup />
-            </Flex>
-        </>
+                    <NextLink href={navItem.href} passHref>
+                        <Link>
+                            <Text
+                                fontWeight={600}
+                                color={useColorModeValue(
+                                    'gray.600',
+                                    'gray.200'
+                                )}
+                            >
+                                {navItem.name}
+                            </Text>
+                        </Link>
+                    </NextLink>
+                </Flex>
+            ))}
+        </Stack>
     );
 };
 export default MobileNav;
