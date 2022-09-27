@@ -10,18 +10,20 @@ import {
     Stack,
     VStack,
 } from '@chakra-ui/react';
-import { supabaseClient } from '@supabase/auth-helpers-nextjs';
+import { supabaseClient, User } from '@supabase/auth-helpers-nextjs';
 import { NextPage } from 'next';
 import { ChangeEvent, useState } from 'react';
 
 const RegisterPage: NextPage = () => {
     const [loading, setLoading] = useState(false);
     const [showPassword, setShowPassword] = useState(false);
+    const [showRepeatPassword, setShowRepeatPassword] = useState(false);
 
     const [password, setPassword] = useState('');
+    const [repeatPassword, setRepeatPassword] = useState('');
     const [email, setEmail] = useState('');
-    const [name, setName] = useState('');
-    const [surname, setSurname] = useState('');
+    const [firstname, setFirstname] = useState('');
+    const [lastname, setLastname] = useState('');
 
     const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
         setEmail(e.target.value);
@@ -31,30 +33,28 @@ const RegisterPage: NextPage = () => {
         setPassword(e.target.value);
     };
 
-    const handleNameChange = (e: ChangeEvent<HTMLInputElement>) => {
-        setName(e.target.value);
+    const handleRepeatPasswordChange = (e: ChangeEvent<HTMLInputElement>) => {
+        setRepeatPassword(e.target.value);
     };
 
-    const handleSurnameChange = (e: ChangeEvent<HTMLInputElement>) => {
-        setSurname(e.target.value);
+    const handleFirstnameChange = (e: ChangeEvent<HTMLInputElement>) => {
+        setFirstname(e.target.value);
+    };
+
+    const handleLastnameChange = (e: ChangeEvent<HTMLInputElement>) => {
+        setLastname(e.target.value);
     };
 
     const handleSubmit = async () => {
-        console.log(email, password, name, surname);
+        console.log(email, password, firstname, lastname);
         try {
             setLoading(true);
-            const { error } = await supabaseClient.auth.signUp(
-                {
-                    email,
-                    password,
-                },
-                {
-                    data: {
-                        username: name + surname,
-                    },
-                }
-            );
+            const { error, user } = await supabaseClient.auth.signUp({
+                email,
+                password,
+            });
             if (error) throw error;
+            if (user) handleUpdateProfile(user);
             // props.onClose();
             // TODO redirect back to home
         } catch (e: any) {
@@ -65,6 +65,22 @@ const RegisterPage: NextPage = () => {
         }
     };
 
+    const handleUpdateProfile = async (user: User) => {
+        const updates = {
+            id: user.id,
+            firstname,
+            lastname,
+        };
+        const { error } = await supabaseClient.from('profiles').upsert(
+            {
+                id: user.id,
+                firstname,
+                lastname,
+            },
+            { returning: 'minimal' }
+        );
+    };
+
     return (
         <Center>
             <VStack>
@@ -73,16 +89,16 @@ const RegisterPage: NextPage = () => {
                     <FormLabel>Name</FormLabel>
                     <Input
                         type="text"
-                        value={name}
-                        onChange={handleNameChange}
+                        value={firstname}
+                        onChange={handleFirstnameChange}
                     />
                 </FormControl>
                 <FormControl>
                     <FormLabel>Surname</FormLabel>
                     <Input
                         type="text"
-                        value={surname}
-                        onChange={handleSurnameChange}
+                        value={lastname}
+                        onChange={handleLastnameChange}
                     />
                 </FormControl>
                 <FormControl>
@@ -108,6 +124,27 @@ const RegisterPage: NextPage = () => {
                                 onClick={() => setShowPassword(!showPassword)}
                             >
                                 {showPassword ? 'Hide' : 'Show'}
+                            </Button>
+                        </InputRightElement>
+                    </InputGroup>
+                </FormControl>
+                <FormControl>
+                    <FormLabel>Repeat Password</FormLabel>
+                    <InputGroup size="md">
+                        <Input
+                            type={showRepeatPassword ? 'test' : 'password'}
+                            value={repeatPassword}
+                            onChange={handleRepeatPasswordChange}
+                        />
+                        <InputRightElement width="4.5rem">
+                            <Button
+                                h="1.75rem"
+                                size="sm"
+                                onClick={() =>
+                                    setShowRepeatPassword(!showPassword)
+                                }
+                            >
+                                {showRepeatPassword ? 'Hide' : 'Show'}
                             </Button>
                         </InputRightElement>
                     </InputGroup>

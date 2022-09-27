@@ -12,9 +12,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         <ChakraProvider>
             <QueryClientProvider client={queryClient}>
                 <UserProvider supabaseClient={supabaseClient}>
-                    <Nav>
-                        <Component {...pageProps} />
-                    </Nav>
+                    <Nav />
+                    <Component {...pageProps} />
                 </UserProvider>
             </QueryClientProvider>
         </ChakraProvider>
