@@ -1,33 +1,17 @@
-import {
-    Box,
-    Container,
-    Text,
-    useBreakpointValue,
-    useMediaQuery,
-} from '@chakra-ui/react';
+import { Box, Flex, Heading, Image, SimpleGrid, Text } from '@chakra-ui/react';
 import type { NextPage } from 'next';
-import Image from 'next/image';
 
 const Home: NextPage = () => {
-    const [showPictureVariant] = useMediaQuery('(min-width: 768px)');
-    const imageWidth = useBreakpointValue({ base: '768px', lg: '62em' });
-
     return (
-        <>
-            {showPictureVariant ? (
-                <Box width="100vw" height="100vh">
-                    <Image
-                        src="/landing-1.jpg"
-                        layout="fill"
-                        style={{ zIndex: '-1' }}
-                    />
-                </Box>
-            ) : (
-                <Container>
-                    <Text>Small!</Text>
-                </Container>
-            )}
-        </>
+        <SimpleGrid columns={{ base: 1, md: 2 }} minH="100vh">
+            <Flex direction="column">
+                <Heading>Welcome!</Heading>
+                <Text>Start your next tour now!</Text>
+            </Flex>
+            <Box borderRadius="20px" display={{ base: 'none', md: 'block' }}>
+                <Image src="landing-1.jpg" h="full" w="full" />
+            </Box>
+        </SimpleGrid>
     );
 };
 
