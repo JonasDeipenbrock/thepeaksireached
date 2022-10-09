@@ -6,7 +6,7 @@ orbs:
 jobs:
   deploy-preview:
     docker:
-      - image: cimg/node:17.9.1
+      - image: cimg/node:18.10.0
     steps:
       - checkout
       - run: echo "hello world"
