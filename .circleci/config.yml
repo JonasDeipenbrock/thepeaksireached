@@ -1,24 +1,33 @@
 version: 2.1
 
 orbs:
-  node: circleci/node@5.0.3
+    node: circleci/node@5.0.3
 
 jobs:
-  deploy-preview:
-    docker:
-      - image: cimg/node:18.10.0
-    steps:
-      - checkout
-      - run: echo "hello world"
+    deploy-preview:
+        docker:
+            - image: cimg/node:18.10.0
+        steps:
+            - checkout
+            - run: echo "hello world"
+    build:
+        docker:
+            - image: cimg/node:18.10.0
+        steps:
+            - checkout
+            - run: node --version
 
 workflows:
-  preview:
-    triggers:
-      - schedule:
-          cron: "0 0 * * *"
-          filters:
-            branches:
-              ignore:
-                - main
-    jobs:
-      - deploy-preview
+    preview:
+        triggers:
+            - schedule:
+                  cron: '0 0 * * *'
+                  filters:
+                      branches:
+                          ignore:
+                              - main
+        jobs:
+            - deploy-preview
+    deploy:
+        jobs:
+            - build
