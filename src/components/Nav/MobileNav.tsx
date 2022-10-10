@@ -3,12 +3,10 @@ import NextLink from 'next/link';
 import { LinkItems } from './Nav';
 
 const MobileNav = () => {
+    const backgroundColor = useColorModeValue('white', 'gray.800');
+    const textColor = useColorModeValue('gray.600', 'gray.200');
     return (
-        <Stack
-            bg={useColorModeValue('white', 'gray.800')}
-            p={4}
-            display={{ md: 'none' }}
-        >
+        <Stack bg={backgroundColor} p={4} display={{ md: 'none' }}>
             {LinkItems.map((navItem) => (
                 <Flex
                     key={navItem.name}
@@ -21,13 +19,7 @@ const MobileNav = () => {
                 >
                     <NextLink href={navItem.href} passHref>
                         <Link>
-                            <Text
-                                fontWeight={600}
-                                color={useColorModeValue(
-                                    'gray.600',
-                                    'gray.200'
-                                )}
-                            >
+                            <Text fontWeight={600} color={textColor}>
                                 {navItem.name}
                             </Text>
                         </Link>

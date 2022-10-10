@@ -16,7 +16,7 @@ import { useEffect } from 'react';
 import LoginModal from './LoginModal';
 
 const AvatarGroup = () => {
-    const { user, error } = useUser();
+    const { user } = useUser();
     const { isOpen, onOpen, onClose } = useDisclosure();
 
     useEffect(() => {

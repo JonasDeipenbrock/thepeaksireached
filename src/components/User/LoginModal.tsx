@@ -49,6 +49,7 @@ const LoginModal = (props: LoginModalProps) => {
             // alert(e.message);
             console.error(e);
         } finally {
+            console.log(loading);
             setLoading(false);
         }
     };

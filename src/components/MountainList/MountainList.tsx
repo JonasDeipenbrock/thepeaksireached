@@ -16,7 +16,10 @@ const MountainList = (props: MountainListProps) => {
                 {props.mountains
                     .sort((a, b) => a.name.localeCompare(b.name))
                     .map((mountain) => (
-                        <MountainListRow mountain={mountain} />
+                        <MountainListRow
+                            mountain={mountain}
+                            key={mountain.name}
+                        />
                     ))}
             </Accordion>
         );

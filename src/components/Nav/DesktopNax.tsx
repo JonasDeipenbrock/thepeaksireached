@@ -3,6 +3,7 @@ import NextLink from 'next/link';
 import { LinkItems } from './Nav';
 
 const DesktopNav = () => {
+    const color = useColorModeValue('gray.600', 'gray.200');
     return (
         <Stack direction="row">
             {LinkItems.map((item) => (
@@ -13,13 +14,7 @@ const DesktopNav = () => {
                                 textDecoration: 'none',
                             }}
                         >
-                            <Text
-                                fontWeight={600}
-                                color={useColorModeValue(
-                                    'gray.600',
-                                    'gray.200'
-                                )}
-                            >
+                            <Text fontWeight={600} color={color}>
                                 {item.name}
                             </Text>
                         </Link>

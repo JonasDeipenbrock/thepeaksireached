@@ -61,6 +61,7 @@ const RegisterPage: NextPage = () => {
             // alert(e.message);
             console.error(e);
         } finally {
+            console.log(loading);
             setLoading(false);
         }
     };
@@ -79,6 +80,7 @@ const RegisterPage: NextPage = () => {
             },
             { returning: 'minimal' }
         );
+        console.log(updates, error);
     };
 
     return (
