@@ -1,28 +1,13 @@
-import { Box, Container, Text, useMediaQuery } from '@chakra-ui/react';
+import { Center, Container, Heading } from '@chakra-ui/react';
 import type { NextPage } from 'next';
-import Image from 'next/image';
 
 const Home: NextPage = () => {
-    const [showPictureVariant] = useMediaQuery('(min-width: 768px)');
-    // const imageWidth = useBreakpointValue({ base: '768px', lg: '62em' });
-
     return (
-        <>
-            {showPictureVariant ? (
-                <Box width="100vw" height="100vh">
-                    <Image
-                        src="/landing-1.jpg"
-                        alt="picture of a mountain"
-                        layout="fill"
-                        style={{ zIndex: '-1' }}
-                    />
-                </Box>
-            ) : (
-                <Container>
-                    <Text>Small!</Text>
-                </Container>
-            )}
-        </>
+        <Container bg="main.200" minH="100vh">
+            <Center>
+                <Heading>Welcome!</Heading>
+            </Center>
+        </Container>
     );
 };
 

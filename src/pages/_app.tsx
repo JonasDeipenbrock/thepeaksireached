@@ -5,11 +5,11 @@ import { QueryClientProvider } from '@tanstack/react-query';
 import type { AppProps } from 'next/app';
 import Nav from '../components/Nav/Nav';
 import { queryClient } from '../repository/clients';
-import '../styles/globals.css';
+import theme from '../theme/theme';
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
-        <ChakraProvider>
+        <ChakraProvider theme={theme}>
             <QueryClientProvider client={queryClient}>
                 <UserProvider supabaseClient={supabaseClient}>
                     <Nav />

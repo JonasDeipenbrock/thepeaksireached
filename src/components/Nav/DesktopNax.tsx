@@ -1,9 +1,8 @@
-import { Box, Link, Stack, Text, useColorModeValue } from '@chakra-ui/react';
+import { Box, Link, Stack, Text } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import { LinkItems } from './Nav';
 
 const DesktopNav = () => {
-    const color = useColorModeValue('gray.600', 'gray.200');
     return (
         <Stack direction="row">
             {LinkItems.map((item) => (
@@ -14,7 +13,7 @@ const DesktopNav = () => {
                                 textDecoration: 'none',
                             }}
                         >
-                            <Text fontWeight={600} color={color}>
+                            <Text fontWeight={600} color="text.800">
                                 {item.name}
                             </Text>
                         </Link>

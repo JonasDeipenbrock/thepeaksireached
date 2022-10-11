@@ -6,7 +6,6 @@ import {
     Link,
     Text,
     useBreakpointValue,
-    useColorModeValue,
     useDisclosure,
 } from '@chakra-ui/react';
 import NextLink from 'next/link';
@@ -47,14 +46,14 @@ const Nav = () => {
     return (
         <>
             <Flex
-                bg={useColorModeValue('white', 'gray.800')}
-                color={useColorModeValue('gray.600', 'white')}
+                bg="main.200"
+                color="text.800"
                 minH={'60px'}
                 py={{ base: 2 }}
                 px={{ base: 4 }}
-                borderBottom={1}
-                borderStyle={'solid'}
-                borderColor={useColorModeValue('gray.200', 'gray.900')}
+                // borderBottom={1}
+                // borderStyle={'solid'}
+                // borderColor={useColorModeValue('gray.200', 'gray.900')}
                 align={'center'}
             >
                 <Flex
@@ -67,6 +66,7 @@ const Nav = () => {
                         icon={isOpen ? <IoClose /> : <ImMenu />}
                         variant={'ghost'}
                         aria-label={'Toggle Navigation'}
+                        color="text.800"
                     />
                 </Flex>
                 <Flex
@@ -88,10 +88,7 @@ const Nav = () => {
                                     })}
                                     fontFamily={'heading'}
                                     fontWeight={600}
-                                    color={useColorModeValue(
-                                        'gray.600',
-                                        'gray.200'
-                                    )}
+                                    color="text.800"
                                     fontSize={'sm'}
                                 >
                                     {process.env.NEXT_PUBLIC_APP_TITLE}

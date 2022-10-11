@@ -34,10 +34,12 @@ const AvatarGroup = () => {
                 <ButtonGroup>
                     <Button>
                         <NextLink href={'/auth/register'} passHref>
-                            <Link>Register</Link>
+                            <Link color="text.800">Register</Link>
                         </NextLink>
                     </Button>
-                    <Button onClick={onOpen}>Log In</Button>
+                    <Button onClick={onOpen} color="text.800">
+                        Log In
+                    </Button>
                 </ButtonGroup>
 
                 <LoginModal isOpen={isOpen} onClose={onClose} />
