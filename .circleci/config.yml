@@ -12,7 +12,7 @@ jobs:
             - run: echo "hello world"
     build:
         docker:
-            - image: node:18
+            - image: node:19
         resource_class: large
         parallelism: 10
 
