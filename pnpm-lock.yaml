@@ -9,7 +9,7 @@ specifiers:
   '@supabase/auth-helpers-nextjs': 0.2.9
   '@supabase/auth-helpers-react': 0.2.4
   '@supabase/supabase-js': 1.35.7
-  '@tanstack/react-query': 4.14.3
+  '@tanstack/react-query': 4.14.5
   '@types/node': 18.11.9
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.8
@@ -34,7 +34,7 @@ dependencies:
   '@supabase/auth-helpers-nextjs': 0.2.9
   '@supabase/auth-helpers-react': 0.2.4
   '@supabase/supabase-js': 1.35.7
-  '@tanstack/react-query': 4.14.3_biqbaboplfbrettd7655fr4n2y
+  '@tanstack/react-query': 4.14.5_biqbaboplfbrettd7655fr4n2y
   axios: 0.27.2
   framer-motion: 6.5.1_biqbaboplfbrettd7655fr4n2y
   next: 12.3.3_mqvh5p7ejg4taogoj6tpk3gd5a
@@ -1797,12 +1797,12 @@ packages:
       tslib: 2.4.0
     dev: false
 
-  /@tanstack/query-core/4.14.3:
-    resolution: {integrity: sha512-1OrxZk5jSKAjTIDgH/OHa6GfVpgGDVbCVf3KHQjXLFdutK4PSSXQIyX7I1HvBR3mYKyvFPo6yXKNG7QrkwUj9g==}
+  /@tanstack/query-core/4.14.5:
+    resolution: {integrity: sha512-Su1AyrPb6xnm7wXTvpN5tt+B7LViYSh9k04vvuc6+eMVH0HkE9ktZTXibRrTvV83BI1KP5MG7v/k90ne/4zQzw==}
     dev: false
 
-  /@tanstack/react-query/4.14.3_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-PP7DEFsOMl/JaGQr1B4IeGN3lqHrC5EpG+AgG03OlVIOQMtXNhb0N66Nt1pdrladvzYsKD20L3O3550rBzgLtg==}
+  /@tanstack/react-query/4.14.5_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-CuWl/SxSB0zHhHaTja8LNhy9Vdk+vk9IkW3Oiq3lo4gPnTguHmbUzfjEA1x3RfvPeHfPMuq/pYMSbV+CX4aDQA==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -1813,7 +1813,7 @@ packages:
       react-native:
         optional: true
     dependencies:
-      '@tanstack/query-core': 4.14.3
+      '@tanstack/query-core': 4.14.5
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       use-sync-external-store: 1.2.0_react@18.2.0
