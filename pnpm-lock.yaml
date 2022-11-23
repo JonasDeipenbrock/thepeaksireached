@@ -19,7 +19,7 @@ specifiers:
   eslint-config-prettier: 8.5.0
   framer-motion: 6.5.1
   next: 12.3.4
-  prettier: 2.7.1
+  prettier: 2.8.0
   react: 18.2.0
   react-dom: 18.2.0
   react-icons: 4.6.0
@@ -49,7 +49,7 @@ devDependencies:
   eslint: 8.28.0
   eslint-config-next: 12.3.4_hsf322ms6xhhd4b5ne6lb74y4a
   eslint-config-prettier: 8.5.0_eslint@8.28.0
-  prettier: 2.7.1
+  prettier: 2.8.0
   typescript: 4.9.3
 
 packages:
@@ -3545,8 +3545,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier/2.7.1:
-    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
+  /prettier/2.8.0:
+    resolution: {integrity: sha512-9Lmg8hTFZKG0Asr/kW9Bp8tJjRVluO8EJQVfY2T7FMw9T5jy4I/Uvx0Rca/XWf50QQ1/SS48+6IJWnrb+2yemA==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
