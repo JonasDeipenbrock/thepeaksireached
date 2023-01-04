@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@babel/core": "7.20.7",
+    "@babel/core": "7.20.12",
     "@chakra-ui/react": "2.4.6",
     "@chakra-ui/styled-system": "2.5.1",
     "@emotion/react": "11.10.5",
