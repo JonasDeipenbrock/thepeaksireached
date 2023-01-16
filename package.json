@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@babel/core": "7.20.12",
-    "@chakra-ui/react": "2.4.8",
+    "@chakra-ui/react": "2.4.9",
     "@chakra-ui/styled-system": "2.5.1",
     "@emotion/react": "11.10.5",
     "@emotion/styled": "11.10.5",
