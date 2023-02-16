@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@babel/core": "7.20.12",
-    "@chakra-ui/react": "2.5.0",
-    "@chakra-ui/styled-system": "2.6.0",
+    "@chakra-ui/react": "2.5.1",
+    "@chakra-ui/styled-system": "2.6.1",
     "@emotion/react": "11.10.5",
     "@emotion/styled": "11.10.5",
     "@supabase/auth-helpers-nextjs": "0.2.9",
