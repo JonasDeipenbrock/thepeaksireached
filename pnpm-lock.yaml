@@ -16,7 +16,7 @@ specifiers:
   axios: 0.27.2
   eslint: 8.35.0
   eslint-config-next: 12.3.4
-  eslint-config-prettier: 8.6.0
+  eslint-config-prettier: 8.7.0
   framer-motion: 6.5.1
   next: 12.3.4
   prettier: 2.8.4
@@ -48,7 +48,7 @@ devDependencies:
   '@types/react-dom': 18.0.11
   eslint: 8.35.0
   eslint-config-next: 12.3.4_ycpbpc6yetojsgtrx3mwntkhsu
-  eslint-config-prettier: 8.6.0_eslint@8.35.0
+  eslint-config-prettier: 8.7.0_eslint@8.35.0
   prettier: 2.8.4
   typescript: 4.9.5
 
@@ -2476,8 +2476,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-config-prettier/8.6.0_eslint@8.35.0:
-    resolution: {integrity: sha512-bAF0eLpLVqP5oEVUFKpMA+NnRFICwn9X8B5jrR9FcqnYBuPbqWEjTEspPWMj5ye6czoSLDweCzSo3Ko7gGrZaA==}
+  /eslint-config-prettier/8.7.0_eslint@8.35.0:
+    resolution: {integrity: sha512-HHVXLSlVUhMSmyW4ZzEuvjpwqamgmlfkutD53cYXLikh4pt/modINRcCIApJ84czDxM4GZInwUrromsDdTImTA==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
