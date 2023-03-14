@@ -7,7 +7,7 @@ specifiers:
   '@emotion/react': 11.10.6
   '@emotion/styled': 11.10.6
   '@supabase/auth-helpers-nextjs': 0.2.9
-  '@supabase/auth-helpers-react': 0.2.4
+  '@supabase/auth-helpers-react': 0.3.1
   '@supabase/supabase-js': 1.35.7
   '@tanstack/react-query': 4.26.1
   '@types/node': 18.15.3
@@ -32,7 +32,7 @@ dependencies:
   '@emotion/react': 11.10.6_pmekkgnqduwlme35zpnqhenc34
   '@emotion/styled': 11.10.6_oouaibmszuch5k64ms7uxp2aia
   '@supabase/auth-helpers-nextjs': 0.2.9
-  '@supabase/auth-helpers-react': 0.2.4
+  '@supabase/auth-helpers-react': 0.3.1_cokbxflmshd5kjr6lm6qhkg44i
   '@supabase/supabase-js': 1.35.7
   '@tanstack/react-query': 4.26.1_biqbaboplfbrettd7655fr4n2y
   axios: 0.27.2
@@ -1765,10 +1765,12 @@ packages:
       '@supabase/auth-helpers-shared': 0.1.4
     dev: false
 
-  /@supabase/auth-helpers-react/0.2.4:
-    resolution: {integrity: sha512-o/6VcnkCQnlPFBOVVlmk5w37fhlalDZKxPV9w5eYwgM4uzg1FwH6b70YNuOhA3EwCcy/S8e3pKVEsKAx/LjFcA==}
+  /@supabase/auth-helpers-react/0.3.1_cokbxflmshd5kjr6lm6qhkg44i:
+    resolution: {integrity: sha512-g3SFv08Dz9FapNif/ZY1b7qKGlMJDyTLSayHBz3kb3FuYxg7aLWgQtydDhm5AGbc0XtvpIBuhGTIOVevwpdosA==}
+    peerDependencies:
+      '@supabase/supabase-js': ^2.0.4
     dependencies:
-      '@supabase/auth-helpers-shared': 0.1.4
+      '@supabase/supabase-js': 1.35.7
     dev: false
 
   /@supabase/auth-helpers-shared/0.1.4:
