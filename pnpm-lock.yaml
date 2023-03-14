@@ -10,7 +10,7 @@ specifiers:
   '@supabase/auth-helpers-react': 0.2.4
   '@supabase/supabase-js': 1.35.7
   '@tanstack/react-query': 4.26.1
-  '@types/node': 18.15.2
+  '@types/node': 18.15.3
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
   axios: 0.27.2
@@ -43,7 +43,7 @@ dependencies:
   react-icons: 4.8.0_react@18.2.0
 
 devDependencies:
-  '@types/node': 18.15.2
+  '@types/node': 18.15.3
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
   eslint: 8.36.0
@@ -1880,8 +1880,8 @@ packages:
     resolution: {integrity: sha512-RoZphVtHbxPZizt4IcILciSWiC6dcn+eZ8oX9IWEYfDMcocdd42f7NPI6fQj+6zI8y4E0L7gu2pcZKLGTRaV9Q==}
     dev: false
 
-  /@types/node/18.15.2:
-    resolution: {integrity: sha512-sDPHm2wfx2QhrMDK0pOt2J4KLJMAcerqWNvnED0itPRJWvI+bK+uNHzcH1dFsBlf7G3u8tqXmRF3wkvL9yUwMw==}
+  /@types/node/18.15.3:
+    resolution: {integrity: sha512-p6ua9zBxz5otCmbpb5D3U4B5Nanw6Pk3PPyX05xnxbB/fRv71N7CPmORg7uAD5P70T0xmx1pzAx/FUfa5X+3cw==}
     dev: true
 
   /@types/parse-json/4.0.0:
