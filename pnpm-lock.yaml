@@ -13,7 +13,7 @@ specifiers:
   '@types/node': 18.15.3
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
-  axios: 0.27.2
+  axios: 0.28.0
   eslint: 8.36.0
   eslint-config-next: 12.3.4
   eslint-config-prettier: 8.7.0
@@ -35,7 +35,7 @@ dependencies:
   '@supabase/auth-helpers-react': 0.3.1_cokbxflmshd5kjr6lm6qhkg44i
   '@supabase/supabase-js': 1.35.7
   '@tanstack/react-query': 4.26.1_biqbaboplfbrettd7655fr4n2y
-  axios: 0.27.2
+  axios: 0.28.0
   framer-motion: 6.5.1_biqbaboplfbrettd7655fr4n2y
   next: 12.3.4_hrdbe576m4w26u2yfpqpvbxyky
   react: 18.2.0
@@ -2094,11 +2094,12 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /axios/0.27.2:
-    resolution: {integrity: sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==}
+  /axios/0.28.0:
+    resolution: {integrity: sha512-Tu7NYoGY4Yoc7I+Npf9HhUMtEEpV7ZiLH9yndTCoNhcpBH0kwcvFbzYN9/u5QKI5A6uefjsNNWaz5olJVYS62Q==}
     dependencies:
       follow-redirects: 1.15.1
       form-data: 4.0.0
+      proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
     dev: false
@@ -3583,6 +3584,10 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       react-is: 16.13.1
+
+  /proxy-from-env/1.1.0:
+    resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
+    dev: false
 
   /punycode/2.1.1:
     resolution: {integrity: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==}
