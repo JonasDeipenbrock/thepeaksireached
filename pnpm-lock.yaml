@@ -7,7 +7,7 @@ specifiers:
   '@emotion/react': 11.10.6
   '@emotion/styled': 11.10.6
   '@supabase/auth-helpers-nextjs': 0.2.9
-  '@supabase/auth-helpers-react': 0.3.1
+  '@supabase/auth-helpers-react': 0.15.0
   '@supabase/supabase-js': 1.35.7
   '@tanstack/react-query': 4.26.1
   '@types/node': 18.15.3
@@ -32,7 +32,7 @@ dependencies:
   '@emotion/react': 11.10.6_pmekkgnqduwlme35zpnqhenc34
   '@emotion/styled': 11.10.6_oouaibmszuch5k64ms7uxp2aia
   '@supabase/auth-helpers-nextjs': 0.2.9
-  '@supabase/auth-helpers-react': 0.3.1_cokbxflmshd5kjr6lm6qhkg44i
+  '@supabase/auth-helpers-react': 0.15.0_cokbxflmshd5kjr6lm6qhkg44i
   '@supabase/supabase-js': 1.35.7
   '@tanstack/react-query': 4.26.1_biqbaboplfbrettd7655fr4n2y
   axios: 0.27.2
@@ -1765,12 +1765,14 @@ packages:
       '@supabase/auth-helpers-shared': 0.1.4
     dev: false
 
-  /@supabase/auth-helpers-react/0.3.1_cokbxflmshd5kjr6lm6qhkg44i:
-    resolution: {integrity: sha512-g3SFv08Dz9FapNif/ZY1b7qKGlMJDyTLSayHBz3kb3FuYxg7aLWgQtydDhm5AGbc0XtvpIBuhGTIOVevwpdosA==}
+  /@supabase/auth-helpers-react/0.15.0_cokbxflmshd5kjr6lm6qhkg44i:
+    resolution: {integrity: sha512-ddyCelBWeOtBNJiJ1x947ZxVEbjydIvpo9hIQ/J/uf+ozLj2buOal+P273rfUIyUf5mIfOtWo9l2hnAqsP/x0w==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
-      '@supabase/supabase-js': ^2.0.4
+      '@supabase/supabase-js': ^2.76.1
     dependencies:
       '@supabase/supabase-js': 1.35.7
+      cookie: 1.1.1
     dev: false
 
   /@supabase/auth-helpers-shared/0.1.4:
@@ -2229,6 +2231,11 @@ packages:
     resolution: {integrity: sha512-+OQdjP49zViI/6i7nIJpA8rAl4sV/JdPfU9nZs3VqOwGIgizICvuN2ru6fMd+4llL0tar18UYJXfZ/TWtmhUjA==}
     dependencies:
       safe-buffer: 5.1.2
+    dev: false
+
+  /cookie/1.1.1:
+    resolution: {integrity: sha512-ei8Aos7ja0weRpFzJnEA9UHJ/7XQmqglbRwnf2ATjcB9Wq874VKH9kfjjirM6UhU2/E5fFYadylyhFldcqSidQ==}
+    engines: {node: '>=18'}
     dev: false
 
   /copy-to-clipboard/3.3.3:
