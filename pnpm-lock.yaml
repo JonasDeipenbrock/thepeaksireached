@@ -10,7 +10,7 @@ specifiers:
   '@supabase/auth-helpers-react': 0.3.1
   '@supabase/supabase-js': 1.35.7
   '@tanstack/react-query': 4.26.1
-  '@types/node': 18.15.3
+  '@types/node': 18.19.130
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
   axios: 0.27.2
@@ -43,7 +43,7 @@ dependencies:
   react-icons: 4.8.0_react@18.2.0
 
 devDependencies:
-  '@types/node': 18.15.3
+  '@types/node': 18.19.130
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
   eslint: 8.36.0
@@ -1875,8 +1875,10 @@ packages:
     resolution: {integrity: sha512-RoZphVtHbxPZizt4IcILciSWiC6dcn+eZ8oX9IWEYfDMcocdd42f7NPI6fQj+6zI8y4E0L7gu2pcZKLGTRaV9Q==}
     dev: false
 
-  /@types/node/18.15.3:
-    resolution: {integrity: sha512-p6ua9zBxz5otCmbpb5D3U4B5Nanw6Pk3PPyX05xnxbB/fRv71N7CPmORg7uAD5P70T0xmx1pzAx/FUfa5X+3cw==}
+  /@types/node/18.19.130:
+    resolution: {integrity: sha512-GRaXQx6jGfL8sKfaIDD6OupbIHBr9jv7Jnaml9tB7l4v068PAOXqfcujMMo5PhbIs6ggR1XODELqahT2R8v0fg==}
+    dependencies:
+      undici-types: 5.26.5
     dev: true
 
   /@types/parse-json/4.0.0:
@@ -3999,6 +4001,10 @@ packages:
       has-bigints: 1.0.2
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
+    dev: true
+
+  /undici-types/5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
     dev: true
 
   /update-browserslist-db/1.0.10_browserslist@4.21.4:
